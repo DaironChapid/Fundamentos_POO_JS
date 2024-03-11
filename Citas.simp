@@ -1,0 +1,340 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<sim-project version="14.00" multi-file="no" uid="simp385f72cc10ae4066acfae64bf9ac8c92" creation-date="03/11/2024 13:17:36">
+  <meta>
+    <name>Citas</name>
+    <authors> Aprendiz</authors>
+    <description />
+  </meta>
+  <counters models="1">
+    <entity-names>
+      <counter>
+        <item-type type-id="class" type="Class" />
+        <value>5</value>
+      </counter>
+    </entity-names>
+    <entity-ids>
+      <counter>
+        <item-type type-id="class" type="Class" />
+        <value>6</value>
+      </counter>
+      <counter>
+        <item-type type-id="property" type="Property" />
+        <value>31</value>
+      </counter>
+      <counter>
+        <item-type type-id="relationship" type="Association" />
+        <value>4</value>
+      </counter>
+    </entity-ids>
+    <diagrams>
+      <counter>
+        <type>SoftwareIdeasModeler.Core.Diagrams.UmlDiagrams.UmlClassDiagram</type>
+        <value>1</value>
+      </counter>
+    </diagrams>
+    <fields />
+  </counters>
+  <alias-groups />
+  <management uid="md-c10ee5b0da6745519aac77a889dc889c" name="" task-id-sequence="0">
+    <persons>
+      <person id="">
+        <first-name />
+        <last-name>Aprendiz</last-name>
+        <role />
+        <e-mail />
+        <phone-number />
+        <description />
+        <color>#00000000</color>
+      </person>
+    </persons>
+    <teams />
+    <sprints />
+    <projects />
+    <modules />
+    <tasks />
+    <to-dos />
+  </management>
+  <glossary id="glsr-40c286ef74c24562ad127476bdf15360" name="" order-index="-1" />
+  <types default="UML">
+    <type-sets>
+      <type-set file="UmlTypes.xml" />
+    </type-sets>
+    <custom-types>
+      <parameters />
+      <types>
+        <type id="LocalDate" name="LocalDate" />
+        <type id="Class:0e8014b7540f44c0b4c6cac06144cf26" name="Medico" class-ref="0e8014b7540f44c0b4c6cac06144cf26" />
+        <type id="Class:dcce189fb1e14f35ad0f507e60569574" name="Paciente" class-ref="dcce189fb1e14f35ad0f507e60569574" />
+        <type id="double" name="double" />
+        <type id="Enum(TipoSangre)" name="Enum(TipoSangre)" />
+        <type id="Enum(Especialidad)" name="Enum(Especialidad)" />
+        <type id="Class:3426919842d1427a8b6827d46b395ab4" name="Cita" class-ref="3426919842d1427a8b6827d46b395ab4" />
+        <type id="Class:44f2caa67bfc4c8692381645b13b6787" name="Consultorio" class-ref="44f2caa67bfc4c8692381645b13b6787" />
+      </types>
+    </custom-types>
+  </types>
+  <items>
+    <item id="bd280e2efed44cf2aa3eb0e69a3fac52" cid="PROP028" type="property" name="llega a" owner="8dedab733e1540db9573a385fb0cd269" creator="" creation-date="03/11/2024 13:31:59" visibility="private">
+      <structural-feature multiplicity="1" type="Medico" type-id="Class:0e8014b7540f44c0b4c6cac06144cf26" />
+    </item>
+    <item id="d5a584ae9d954c1d903d8d70dbcef86a" cid="PROP029" type="property" name="atiende en" owner="666be3a9bbfb40ab9935e64b0b873ed7" creator="" creation-date="03/11/2024 13:34:33" visibility="private">
+      <structural-feature multiplicity="1" type="Consultorio" type-id="Class:44f2caa67bfc4c8692381645b13b6787" />
+    </item>
+    <item id="119a131237fe4920a90f2a96b4853eaf" cid="PROP026" type="property" name="puede agendar" owner="f252f87c077240e08cb6ab1e62ea265c" creator="" creation-date="03/11/2024 13:27:55" visibility="private">
+      <structural-feature multiplicity="1" type="Cita" type-id="Class:3426919842d1427a8b6827d46b395ab4" />
+    </item>
+    <item id="b54f6727f29b4423b693a71e01e3e121" cid="PROP030" type="property" name="tiene a" owner="666be3a9bbfb40ab9935e64b0b873ed7" creator="" creation-date="03/11/2024 13:34:33" visibility="private">
+      <structural-feature multiplicity="1" type="Medico" type-id="Class:0e8014b7540f44c0b4c6cac06144cf26" />
+    </item>
+    <item id="2917ef0a4daf41399d575205ac0ad2e4" cid="PROP027" type="property" name="atiende" owner="8dedab733e1540db9573a385fb0cd269" creator="" creation-date="03/11/2024 13:31:59" visibility="private">
+      <structural-feature multiplicity="1..*" type="Cita" type-id="Class:3426919842d1427a8b6827d46b395ab4" />
+    </item>
+    <item id="5367dbcab9f04ac982f90127845a2f93" cid="PROP025" type="property" name="consulta a" owner="f252f87c077240e08cb6ab1e62ea265c" creator="" creation-date="03/11/2024 13:27:55" visibility="private">
+      <structural-feature multiplicity="1..*" type="Paciente" type-id="Class:dcce189fb1e14f35ad0f507e60569574" />
+      <property aggregation="composite" />
+    </item>
+  </items>
+  <models>
+    <model id="pcf8fb97bf91a46d19f0db5d03feffa68_568238194" name="Model1" namespace="" order-index="1">
+      <meta>
+        <authors>
+          <author> </author>
+        </authors>
+        <description />
+        <creation-date>03/11/2024 13:17:50</creation-date>
+        <change-date>01/01/0001 00:00:00</change-date>
+        <revision-count>0</revision-count>
+        <version />
+      </meta>
+      <abstract-items />
+      <sub-models />
+      <diagram type="uml-class" id="p0a6e9aa817924dc89053816d8cc6caa2_735973712" name="ClassDiagram1" order-index="1" uid="" auto-routed-paths="false" default-line-style="default" view-location="-5,-183" zoom="0.8">
+        <style>
+          <background-color index="1" color="#FFFFFFFF" />
+          <background-color index="2" color="#FFFFFFFF" />
+          <background-type type="solid" />
+        </style>
+        <meta>
+          <authors>
+            <author> </author>
+          </authors>
+          <description />
+          <creation-date>03/11/2024 13:17:50</creation-date>
+          <change-date>03/11/2024 13:34:33</change-date>
+          <revision-count>0</revision-count>
+          <version />
+        </meta>
+        <abstract-items>
+          <item id="5d30cc78c998401cb8d79ae09f99ae5c" cid="PROP003" type="property" name="apellidos" owner="0e8014b7540f44c0b4c6cac06144cf26" creator="" creation-date="03/11/2024 13:18:24" visibility="private">
+            <structural-feature type="String" type-id="Uml.String" />
+          </item>
+          <item id="8dedab733e1540db9573a385fb0cd269" cid="REL002" type="relationship" creator="" creation-date="03/11/2024 13:31:59" from="3426919842d1427a8b6827d46b395ab4" to="0e8014b7540f44c0b4c6cac06144cf26" visibility="package">
+            <owned-items />
+            <relation from="3426919842d1427a8b6827d46b395ab4" to="0e8014b7540f44c0b4c6cac06144cf26" derived="false">
+              <start-role id="umlar-40cb5a94-8b41-4fd5-a9d8-33acee696080" name="" navigability="" association-type="association" visibility="private" property-ref="2917ef0a4daf41399d575205ac0ad2e4" />
+              <end-role id="umlar-a0408de6-c861-4cac-b151-6e1718bd7b41" name="" navigability="" association-type="association" visibility="private" property-ref="bd280e2efed44cf2aa3eb0e69a3fac52" />
+            </relation>
+          </item>
+          <item id="29def892478d4a93996d33294a24f006" cid="PROP023" type="property" name="id" owner="3426919842d1427a8b6827d46b395ab4" creator="" creation-date="03/11/2024 13:26:58" visibility="private">
+            <structural-feature type="Integer" type-id="Uml.Integer" />
+          </item>
+          <item id="8ad33fb28b084a9c84ae259a7c958b87" cid="PROP017" type="property" name="peso" owner="dcce189fb1e14f35ad0f507e60569574" creator="" creation-date="03/11/2024 13:24:02" visibility="private">
+            <structural-feature type="double" type-id="double" />
+          </item>
+          <item id="666be3a9bbfb40ab9935e64b0b873ed7" cid="REL003" type="relationship" creator="" creation-date="03/11/2024 13:34:33" from="44f2caa67bfc4c8692381645b13b6787" to="0e8014b7540f44c0b4c6cac06144cf26" visibility="package">
+            <owned-items />
+            <relation from="44f2caa67bfc4c8692381645b13b6787" to="0e8014b7540f44c0b4c6cac06144cf26" derived="false">
+              <start-role id="umlar-cb7add54-fad8-4b90-8d6f-117f7c95a074" name="" navigability="" association-type="association" visibility="private" property-ref="d5a584ae9d954c1d903d8d70dbcef86a" />
+              <end-role id="umlar-f9a9bb6c-8ddc-4121-8781-77e6cd6ad90a" name="" navigability="" association-type="association" visibility="private" property-ref="b54f6727f29b4423b693a71e01e3e121" />
+            </relation>
+          </item>
+          <item id="44f2caa67bfc4c8692381645b13b6787" cid="C003" type="class" name="Consultorio" creator="" creation-date="03/11/2024 13:26:07" visibility="private">
+            <owned-items />
+            <attributes>
+              <attribute id="a49287802f8b54bad84548f0892c26fbc378" cid="PROP020" name="id" creation-date="03/11/2024 13:26:13" property-ref="5de175ef27b848a2a65dd5b70876baa3" />
+              <attribute id="a5e02f977d9964342be459243a41f18fe881" cid="PROP021" name="direccion" creation-date="03/11/2024 13:26:23" property-ref="03a20641500345a791dffb38ee73d3e9" />
+              <attribute id="ab2f250ccf3724603b04c76547342b4b770" cid="PROP022" name="numero" creation-date="03/11/2024 13:26:31" property-ref="ff3568258d8c434abd6c21f624c14ffe" />
+            </attributes>
+          </item>
+          <item id="fc2dcbdf4ae34205bedd812cb63b879b" cid="PROP008" type="property" name="id" owner="dcce189fb1e14f35ad0f507e60569574" creator="" creation-date="03/11/2024 13:22:00" visibility="private">
+            <structural-feature type="Integer" type-id="Uml.Integer" />
+          </item>
+          <item id="03a20641500345a791dffb38ee73d3e9" cid="PROP021" type="property" name="direccion" owner="44f2caa67bfc4c8692381645b13b6787" creator="" creation-date="03/11/2024 13:26:23" visibility="private">
+            <structural-feature type="String" type-id="Uml.String" />
+          </item>
+          <item id="02602eaf7f744f58a74d8ae8ba052775" cid="PROP018" type="property" name="tipoSangre" owner="dcce189fb1e14f35ad0f507e60569574" creator="" creation-date="03/11/2024 13:25:04" visibility="private">
+            <structural-feature type="Enum(TipoSangre)" type-id="Enum(TipoSangre)" />
+          </item>
+          <item id="676b39af3544450485bfe50d8d0b991d" cid="PROP010" type="property" name="apellidos" owner="dcce189fb1e14f35ad0f507e60569574" creator="" creation-date="03/11/2024 13:22:18" visibility="private">
+            <structural-feature type="String" type-id="Uml.String" />
+          </item>
+          <item id="cca15aa160d448f1b8ca990bb14bebc4" cid="PROP016" type="property" name="altura" owner="dcce189fb1e14f35ad0f507e60569574" creator="" creation-date="03/11/2024 13:23:55" visibility="private">
+            <structural-feature type="double" type-id="double" />
+          </item>
+          <item id="edc390dcfb4745b29b09ff1711ffc319" cid="PROP001" type="property" name="id" owner="0e8014b7540f44c0b4c6cac06144cf26" creator="" creation-date="03/11/2024 13:18:02" visibility="private">
+            <structural-feature type="Integer" type-id="Uml.Integer" />
+          </item>
+          <item id="898bedf2de104524be84ebf1d849e9ee" cid="PROP012" type="property" name="numeroIdentificacion" owner="dcce189fb1e14f35ad0f507e60569574" creator="" creation-date="03/11/2024 13:22:42" visibility="private">
+            <structural-feature type="Integer" type-id="Uml.Integer" />
+          </item>
+          <item id="3426919842d1427a8b6827d46b395ab4" cid="C005" type="class" name="Cita" creator="" creation-date="03/11/2024 13:26:55" visibility="private">
+            <owned-items />
+            <attributes>
+              <attribute id="aff5812bbf0564c2aae29d50923510895528" cid="PROP023" name="id" creation-date="03/11/2024 13:26:58" property-ref="29def892478d4a93996d33294a24f006" />
+              <attribute id="a1bfb4f7a09cd49b78ea860c66aa47668856" cid="PROP024" name="fecha" creation-date="03/11/2024 13:27:08" property-ref="a390e0e900da4227af63fd2832af0195" />
+            </attributes>
+          </item>
+          <item id="0e8014b7540f44c0b4c6cac06144cf26" cid="C001" type="class" name="Medico" creator="" creation-date="03/11/2024 13:17:54" visibility="private">
+            <owned-items />
+            <attributes>
+              <attribute id="a5d3066a2010043cb9a93dc71d08645a510" cid="PROP001" name="id" creation-date="03/11/2024 13:18:02" property-ref="edc390dcfb4745b29b09ff1711ffc319" />
+              <attribute id="ad0fdc435ce1f4f6f8fcee8d318ea33a3868" cid="PROP002" name="nombres" creation-date="03/11/2024 13:18:12" property-ref="f5b4e95d9f834ebb9050ccec33b2c988" />
+              <attribute id="a89572008fae04e678a3bf676ff75083d589" cid="PROP003" name="apellidos" creation-date="03/11/2024 13:18:24" property-ref="5d30cc78c998401cb8d79ae09f99ae5c" />
+              <attribute id="a700d1412753a461d8a02766167c8561d685" cid="PROP004" name="tipoIdentificacion" creation-date="03/11/2024 13:18:30" property-ref="d8b0c488b0a54b41a5142e1ab8e5511f" />
+              <attribute id="a8b8d6fee752e44aa8fabac8086c65b5e213" cid="PROP005" name="numeroIdentificacion" creation-date="03/11/2024 13:18:47" property-ref="244ef63da6e14bf7a87646ec060ebdeb" />
+              <attribute id="af3e2d810853f401c898e36a428d0cdb1232" cid="PROP006" name="registroMedico" creation-date="03/11/2024 13:20:35" property-ref="01efa39381f545fbbc0d05e1a9d80f3c" />
+              <attribute id="a4e7a11778efa4afca7a072f6993e10f7795" cid="PROP007" name="especialidad" creation-date="03/11/2024 13:20:48" property-ref="9dab8ce30ccf4127ba4c9ef15b4d366d" />
+            </attributes>
+          </item>
+          <item id="f252f87c077240e08cb6ab1e62ea265c" cid="REL001" type="relationship" creator="" creation-date="03/11/2024 13:27:55" from="dcce189fb1e14f35ad0f507e60569574" to="3426919842d1427a8b6827d46b395ab4" visibility="package">
+            <owned-items />
+            <relation from="dcce189fb1e14f35ad0f507e60569574" to="3426919842d1427a8b6827d46b395ab4" derived="false">
+              <start-role id="umlar-53dd8e16-38a8-4517-8dd8-a787cf821002" name="" navigability="" association-type="composition" visibility="private" property-ref="5367dbcab9f04ac982f90127845a2f93" />
+              <end-role id="umlar-58a07892-4136-4e38-97a3-0319274d7e50" name="" navigability="" association-type="association" visibility="private" property-ref="119a131237fe4920a90f2a96b4853eaf" />
+            </relation>
+          </item>
+          <item id="406effdba7e34a7faee3542ef18cb0d3" cid="PROP019" type="property" name="factorRH" owner="dcce189fb1e14f35ad0f507e60569574" creator="" creation-date="03/11/2024 13:25:37" visibility="private">
+            <structural-feature type="Char" type-id="Uml.Char" />
+          </item>
+          <item id="6c95de87b67544b9b24c8753b068a56b" cid="PROP011" type="property" name="tipoIdentificacion" owner="dcce189fb1e14f35ad0f507e60569574" creator="" creation-date="03/11/2024 13:22:23" visibility="private">
+            <structural-feature type="String" type-id="Uml.String" />
+          </item>
+          <item id="a390e0e900da4227af63fd2832af0195" cid="PROP024" type="property" name="fecha" owner="3426919842d1427a8b6827d46b395ab4" creator="" creation-date="03/11/2024 13:27:08" visibility="private">
+            <structural-feature type="DateTime" type-id="Uml.DateTime" />
+          </item>
+          <item id="dcce189fb1e14f35ad0f507e60569574" cid="C002" type="class" name="Paciente" creator="" creation-date="03/11/2024 13:21:48" visibility="private">
+            <owned-items />
+            <style style-name="Default" shadow-type="smooth" shadow-offset="2,2" shadow-visible="true" shadow-color="#3A555555" shadow-radius="8" wrap-name-text="true" wrap-other-text="true" padding="2" margin="1" glow-color="#FFFFFF" accuracy="0.9">
+              <text-style type="name" color="#555555" font="Segoe UI;11.25;B" />
+              <text-style type="part-header" color="#1E1E1E" font="Verdana;9;I" />
+              <text-style type="text" color="#555555" font="Segoe UI;9.75;" horizontal-alignment="left" />
+              <text-style type="tagged-value" color="#555555" font="Segoe UI;9.75;" />
+              <text-style type="stereotype" color="#555555" font="Segoe UI;9;I" />
+              <background type="solid" colors="#F2F2F2,#F2F2F2" />
+              <border color="#555555" width="2" />
+              <label-connector color="#80000000" dash-style="Dash" />
+              <alternate-styles>
+                <alternate-style style-name="Alternate" shadow-type="smooth" shadow-offset="2,2" shadow-visible="true" shadow-color="#322A2A2A" shadow-radius="8" wrap-name-text="true" wrap-other-text="true" padding="2" margin="1" glow-color="#FFFFFF" accuracy="0.9">
+                  <text-style type="name" color="#E9E9E9" font="Segoe UI;11.25;B" />
+                  <text-style type="part-header" color="#1E1E1E" font="Verdana;9;I" />
+                  <text-style type="text" color="#E9E9E9" font="Segoe UI;9.75;" horizontal-alignment="left" />
+                  <text-style type="tagged-value" color="#E9E9E9" font="Segoe UI;9.75;" />
+                  <text-style type="stereotype" color="#E9E9E9" font="Segoe UI;9;I" />
+                  <background type="solid" colors="#203D85,#203D85" />
+                  <border color="#203D85" width="2" />
+                  <label-connector color="#80000000" dash-style="Dash" />
+                </alternate-style>
+              </alternate-styles>
+            </style>
+            <attributes>
+              <attribute id="ad510439ddf324d0fa98975ac4ecfee27395" cid="PROP008" name="id" creation-date="03/11/2024 13:22:00" property-ref="fc2dcbdf4ae34205bedd812cb63b879b" />
+              <attribute id="a5a02ef577e1f4f1ebcae14a373985be0741" cid="PROP009" name="nombres" creation-date="03/11/2024 13:22:11" property-ref="9e8822101a7a4bbf918d656173c0c885" />
+              <attribute id="aaa2e21975fcd4bc993c17ad8b11b6c0a118" cid="PROP010" name="apellidos" creation-date="03/11/2024 13:22:18" property-ref="676b39af3544450485bfe50d8d0b991d" />
+              <attribute id="af3fdc8af050e44f296e73a88fa8c73a8219" cid="PROP011" name="tipoIdentificacion" creation-date="03/11/2024 13:22:23" property-ref="6c95de87b67544b9b24c8753b068a56b" />
+              <attribute id="a32ee2dd86f164f46b2a8a131a8bd4473955" cid="PROP012" name="numeroIdentificacion" creation-date="03/11/2024 13:22:42" property-ref="898bedf2de104524be84ebf1d849e9ee" />
+              <attribute id="a9b0c780384e64947a71e357ba34882fc75" cid="PROP013" name="correoElectronico" creation-date="03/11/2024 13:23:07" property-ref="f8e953ecc52048beb55344b8de7d7669" />
+              <attribute id="adb40f8788c1343b09ce912ced28fb9ad90" cid="PROP014" name="celular" creation-date="03/11/2024 13:23:24" property-ref="802ef0eaf356435b898f1ffd438b64d4" />
+              <attribute id="a1ad7b7c0bf27476ca7c43f8e81c9da89667" cid="PROP015" name="fechaNacimiento" creation-date="03/11/2024 13:23:30" property-ref="73ae7b634c994b95bef4afcd452ef866" />
+              <attribute id="ae5a24982043c46879d61c31d25d14428925" cid="PROP016" name="altura" creation-date="03/11/2024 13:23:55" property-ref="cca15aa160d448f1b8ca990bb14bebc4" />
+              <attribute id="ac61b59b8c1324cb4b3e2323695db24ab750" cid="PROP017" name="peso" creation-date="03/11/2024 13:24:02" property-ref="8ad33fb28b084a9c84ae259a7c958b87" />
+              <attribute id="ad951c4f0b9a74f5788b11be5f3b9a94b88" cid="PROP018" name="tipoSangre" creation-date="03/11/2024 13:25:04" property-ref="02602eaf7f744f58a74d8ae8ba052775" />
+              <attribute id="a8627aff5cb5946d49493e1088f4f0d74560" cid="PROP019" name="factorRH" creation-date="03/11/2024 13:25:37" property-ref="406effdba7e34a7faee3542ef18cb0d3" />
+            </attributes>
+          </item>
+          <item id="f5b4e95d9f834ebb9050ccec33b2c988" cid="PROP002" type="property" name="nombres" owner="0e8014b7540f44c0b4c6cac06144cf26" creator="" creation-date="03/11/2024 13:18:12" visibility="private">
+            <structural-feature type="String" type-id="Uml.String" />
+          </item>
+          <item id="01efa39381f545fbbc0d05e1a9d80f3c" cid="PROP006" type="property" name="registroMedico" owner="0e8014b7540f44c0b4c6cac06144cf26" creator="" creation-date="03/11/2024 13:20:35" visibility="private">
+            <structural-feature type="Integer" type-id="Uml.Integer" />
+          </item>
+          <item id="9e8822101a7a4bbf918d656173c0c885" cid="PROP009" type="property" name="nombres" owner="dcce189fb1e14f35ad0f507e60569574" creator="" creation-date="03/11/2024 13:22:11" visibility="private">
+            <structural-feature type="String" type-id="Uml.String" />
+          </item>
+          <item id="9dab8ce30ccf4127ba4c9ef15b4d366d" cid="PROP007" type="property" name="especialidad" owner="0e8014b7540f44c0b4c6cac06144cf26" creator="" creation-date="03/11/2024 13:20:48" visibility="private">
+            <structural-feature type="Enum(Especialidad)" type-id="Enum(Especialidad)" />
+          </item>
+          <item id="244ef63da6e14bf7a87646ec060ebdeb" cid="PROP005" type="property" name="numeroIdentificacion" owner="0e8014b7540f44c0b4c6cac06144cf26" creator="" creation-date="03/11/2024 13:18:47" visibility="private">
+            <structural-feature type="Integer" type-id="Uml.Integer" />
+          </item>
+          <item id="5de175ef27b848a2a65dd5b70876baa3" cid="PROP020" type="property" name="id" owner="44f2caa67bfc4c8692381645b13b6787" creator="" creation-date="03/11/2024 13:26:13" visibility="private">
+            <structural-feature type="Integer" type-id="Uml.Integer" />
+          </item>
+          <item id="d8b0c488b0a54b41a5142e1ab8e5511f" cid="PROP004" type="property" name="tipoIdentificacion" owner="0e8014b7540f44c0b4c6cac06144cf26" creator="" creation-date="03/11/2024 13:18:30" visibility="private">
+            <structural-feature type="String" type-id="Uml.String" />
+          </item>
+          <item id="73ae7b634c994b95bef4afcd452ef866" cid="PROP015" type="property" name="fechaNacimiento" owner="dcce189fb1e14f35ad0f507e60569574" creator="" creation-date="03/11/2024 13:23:30" visibility="private">
+            <structural-feature type="LocalDate" type-id="LocalDate" />
+          </item>
+          <item id="802ef0eaf356435b898f1ffd438b64d4" cid="PROP014" type="property" name="celular" owner="dcce189fb1e14f35ad0f507e60569574" creator="" creation-date="03/11/2024 13:23:24" visibility="private">
+            <structural-feature type="Integer" type-id="Uml.Integer" />
+          </item>
+          <item id="ff3568258d8c434abd6c21f624c14ffe" cid="PROP022" type="property" name="numero" owner="44f2caa67bfc4c8692381645b13b6787" creator="" creation-date="03/11/2024 13:26:31" visibility="private">
+            <structural-feature type="Integer" type-id="Uml.Integer" />
+          </item>
+          <item id="f8e953ecc52048beb55344b8de7d7669" cid="PROP013" type="property" name="correoElectronico" owner="dcce189fb1e14f35ad0f507e60569574" creator="" creation-date="03/11/2024 13:23:07" visibility="private">
+            <structural-feature type="String" type-id="Uml.String" />
+          </item>
+        </abstract-items>
+        <layer id="6a1b2db02a1c4fdb8ec4504900d7c5ea" name="Default" visible="true" enabled="true" locked="false">
+          <item id="0e8014b7540f44c0b4c6cac06144cf26" iid="e99389077f524568b816c1f34aa1bed8" show-fields="true" creation-date="03/11/2024 13:17:54" order-index="0" type="entity">
+            <layout ax="502.5" ay="303" awidth="213" aheight="196" x="502.5" y="303" width="213" height="196" />
+            <classifier />
+            <class />
+          </item>
+          <item id="dcce189fb1e14f35ad0f507e60569574" iid="8b35f936cc5b4fcdad1aa53f2cb3cd63" show-fields="true" creation-date="03/11/2024 13:21:48" order-index="1" type="entity">
+            <layout ax="36" ay="-46" awidth="244" aheight="284" x="36" y="-46" width="244" height="284" />
+            <classifier />
+            <class />
+          </item>
+          <item id="44f2caa67bfc4c8692381645b13b6787" iid="c6c85e4fc7ab4fa88ab73ee67dde2b78" show-fields="true" creation-date="03/11/2024 13:26:07" order-index="2" type="entity">
+            <layout ax="99" ay="303" awidth="140" aheight="160" x="99" y="303" width="140" height="160" />
+            <classifier />
+            <class />
+          </item>
+          <item id="3426919842d1427a8b6827d46b395ab4" iid="a3284b1d6a2740bead9cdc99d7880e64" show-fields="true" creation-date="03/11/2024 13:26:55" order-index="3" type="entity">
+            <layout ax="539" ay="-29" awidth="140" aheight="160" x="539" y="-29" width="140" height="160" />
+            <classifier />
+            <class />
+          </item>
+          <item id="f252f87c077240e08cb6ab1e62ea265c" iid="9717859c14e84c8889d8241fed8f587d" creation-date="03/11/2024 13:27:55" order-index="4" type="relation">
+            <layout start-role-position="219.89087,29.640821" end-role-position="213.24586,27.679844" start-multiplicity-position="245.0533,-21.509565" end-multiplicity-position="233.78467,-33.31827" line-style="oblique" start-auto-side="false" lock-start-point="true" lock-end-point="true" lock-to-fields="false" auto-path="" x1="280" y1="-29" x2="539" y2="-29" start-border-pos="0.2649647891521454" end-border-pos="0" start-local-pos="17" end-local-pos="0" name-position="-3,27" name-width="54">
+              <points>
+                <point x="280" y="-29" />
+                <point x="539" y="-29" />
+              </points>
+            </layout>
+            <relation from="dcce189fb1e14f35ad0f507e60569574" from-iid="8b35f936cc5b4fcdad1aa53f2cb3cd63" to="3426919842d1427a8b6827d46b395ab4" to-iid="a3284b1d6a2740bead9cdc99d7880e64" />
+          </item>
+          <item id="8dedab733e1540db9573a385fb0cd269" iid="b3852842757b4e77880792a4c19f98de" creation-date="03/11/2024 13:31:59" order-index="5" type="relation">
+            <layout start-role-position="23.303314,34.95301" end-role-position="10.950152,43.54582" start-multiplicity-position="18.910803,-41.22825" end-multiplicity-position="15.78474,-36.35248" line-style="oblique" lock-start-point="true" lock-end-point="true" lock-to-fields="false" auto-path="" x1="635" y1="131" x2="641" y2="303" start-border-pos="0.5785714285714285" end-border-pos="0.16255868544600938" start-local-pos="96" end-local-pos="138.5" name-position="0,20">
+              <points>
+                <point x="635" y="131" />
+                <point x="641" y="303" />
+              </points>
+            </layout>
+            <relation from="3426919842d1427a8b6827d46b395ab4" from-iid="a3284b1d6a2740bead9cdc99d7880e64" to="0e8014b7540f44c0b4c6cac06144cf26" to-iid="e99389077f524568b816c1f34aa1bed8" />
+          </item>
+          <item id="666be3a9bbfb40ab9935e64b0b873ed7" iid="eb798eba149147feacfe564d09cc5898" creation-date="03/11/2024 13:34:33" order-index="6" type="relation">
+            <layout start-role-position="110,23" end-role-position="54,22" start-multiplicity-position="101,-16" end-multiplicity-position="53,-27" line-style="oblique" lock-start-point="true" lock-end-point="true" lock-to-fields="false" auto-path="" x1="166" y1="303" x2="528" y2="303" start-border-pos="0.11964285714285715" end-border-pos="0.02992957746478873" start-local-pos="67" end-local-pos="25.5" name-position="0,20" name-width="54">
+              <points>
+                <point x="166" y="303" />
+                <point x="528" y="303" />
+              </points>
+            </layout>
+            <relation from="44f2caa67bfc4c8692381645b13b6787" from-iid="c6c85e4fc7ab4fa88ab73ee67dde2b78" to="0e8014b7540f44c0b4c6cac06144cf26" to-iid="e99389077f524568b816c1f34aa1bed8" />
+          </item>
+        </layer>
+      </diagram>
+    </model>
+  </models>
+</sim-project>
